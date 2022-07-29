@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { IconDeliveryComponent } from './icon-delivery.component';
 import { IconFireComponent } from './icon-fire.component';
 import { IconThumbsUpComponent } from './icon-thumbs-up.component';
+import { IconStarComponent } from './icon-star.component';
 
 
 
@@ -11,6 +12,7 @@ import { IconThumbsUpComponent } from './icon-thumbs-up.component';
     IconDeliveryComponent,
     IconFireComponent,
     IconThumbsUpComponent,
+    IconStarComponent,
   ],
   imports: [
     CommonModule

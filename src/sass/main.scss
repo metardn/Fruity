@@ -1,0 +1,26 @@
+//margin
+$enable-negative-margins: true;
+
+//colors
+$green: #28B15F;
+$red: #DD4D4D;
+
+$body-bg: #F7EFFF;
+
+//card
+$card-border-radius: 0;
+$card-border-width: none;
+$card-color: white;
+
+//pagination
+$pagination-border-width: 0;
+$pagination-border-radius: 0;
+$pagination-hover-color: #353232;
+$pagination-hover-bg: white;
+$pagination-active-color: #353232;
+$pagination-active-bg: white;
+$pagination-focus-color: #353232;
+$pagination-focus-bg: white;
+$pagination-focus-box-shadow: none;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";

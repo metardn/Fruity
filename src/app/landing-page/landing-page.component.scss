@@ -6,9 +6,96 @@
 
 .rubik-font { font-family: 'Rubik'; }
 
-.header { background: #FFEDCC; }
+.header { 
+  background: #FFEDCC;
 
-h1 {
-  font-weight: 700;
-  font-size: 50px;
+  h1 {
+    font-weight: 700;
+    font-size: 50px;
+  }
+  
+  p { color: #5f5f5fb5; }
+
+  .shopping-btn {
+    width: 300px;
+    height: 70px;
+    font-size: 24px;
+  }
+  
+  img { max-width: 240px; max-height: 240px;}
+
+  .img1 { max-width: 270px; max-height: 240px;}
+  
+  .card {
+    font-size: 20px;
+  }
 }
+
+.card { color: white; }
+
+button, button:hover, button:focus { color: white; }
+
+.black-1 { color: #1F1E1E; }
+
+select {
+  width: 180px;
+  border: 1px solid rgba(104, 104, 104, 0.81);
+  border-radius: 10px;
+}
+
+.bar .active, .bar a:hover { font-weight: 700; }
+
+.text-yellow { color: #E4CA40; }
+.text-gray { color: #EBE7D5; }
+
+.list-card {
+  height: 100%;
+
+  h5 { 
+    font-size: 26px;
+    color: #2E2929;
+  }
+
+  p { color: #B9B1A7; }
+
+  .price { color: #1D1A1A; }
+}
+
+.pagination {
+  background: white;
+  a {
+    color: #615D5D;
+  }
+
+  button {
+    background: #EEEEEE;
+    color: #585757;
+  }
+}
+
+
+.pagination a:hover, .pagination .active{
+  text-decoration: underline 3px;
+  text-underline-offset: 3px;
+  text-decoration-color: #28B15F;
+  font-weight: bolder;
+}
+
+h3 {font-size: 36px; }
+
+#testimonial {
+  text-decoration: underline 4px;
+  text-underline-offset: 4px;
+  text-decoration-color: #28B15F;
+  
+  .sub-testimonial { color: #5C5959;}
+}
+
+.testimonial-card { height: 100%;}
+.name { font-size: 20px; }
+.location { font-size: 16px; }
+.p-text { font-size: 20px; }
+
+.green { background: #2ABF7D; }
+.purple { background: #A859C3; }
+.blue { background: #4A7AD3;}

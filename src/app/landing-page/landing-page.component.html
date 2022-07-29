@@ -1,20 +1,20 @@
 <div class="container-fluid px-0">
   <div class="header py-4">
-    <div class="mx-5">
+    <div class="mx-4 mx-sm-5">
       <div class="row">
-        <div class="col-3 ">
+        <div class="col-3">
           <h2 class="logo rubik-font">Fruity</h2>
         </div>
-        <div class="col d-flex align-items-center justify-content-center">
-          <div class="d-flex gap-5">
+        <div class="col d-flex align-items-center justify-content-end justify-content-md-center">
+          <div class="d-grid d-sm-flex gap-3 gap-md-3 gap-xxl-5">
             <a href="#" class="text-decoration-none text-black">Home</a>
             <a href="#" class="text-decoration-none text-black">About</a>
-            <a href="#" class="text-decoration-none text-black">How to shop</a>
+            <a href="#" class="text-decoration-none text-black text-nowrap">How to shop</a>
             <a href="#" class="text-decoration-none text-black">List</a>
             <a href="#" class="text-decoration-none text-black">Contact</a>
           </div>
         </div>
-        <div class="col-3 d-flex align-items-center justify-content-end">
+        <div class="col-12 col-md-3 d-flex align-items-center justify-content-sm-end">
           <div class="d-flex gap-3">
             <a href="#" class="text-decoration-none text-black">Log in</a>|
             <a href="#" class="text-decoration-none text-black">Register</a>
@@ -22,30 +22,147 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-5">
-          <h1 class="rubik-font">Welcome to Fruity,</h1>
-          <h1 class="rubik-font">Your choice to shop a fresh local fruits!</h1>
-          <p>All our fruits and vegetables was 100% from local farmers. We give a quarantine that our products are fresh, organic and also healthy!</p>
-          <button class="btn btn-danger">Let's shopping</button>
+      <div class="row my-4">
+        <div class="col-12 col-lg-5 pe-0 d-flex align-items-center">
+          <div>
+            <h1 class="rubik-font">Welcome to Fruity,</h1>
+            <h1 class="rubik-font mb-4">Your choice to shop a fresh local fruits!</h1>
+            <p class="mb-4 col-12 col-lg-7 fw-bolder">All our fruits and vegetables was 100% from local farmers. We give a quarantine that our products are fresh, organic and also healthy!</p>
+            <button class="btn btn-danger mt-5 shopping-btn">Let's shopping</button>
+          </div>
         </div>
-        <div class="col">
-
+        <div class="col-12 col-lg-7 ms-sm-n5 mt-5 mt-lg-0">
+          <div class="ms-sm-5 me-sm-n5 me-lg-0 ms-lg-0">
+            <div class="row ms-sm-n5">
+              <div class="col-12 col-sm px-0 ms-0 d-flex align-items-center justify-content-center justify-content-sm-end mb-sm-n5">
+                <img [src]="images[1]" class="rounded-circle mb-sm-n5">
+              </div>
+              <div class="col-12 col-sm ps-0 d-grid gap-2 justify-content-center justify-content-sm-start mt-3 mt-sm-0">
+                <img [src]="images[0]" class="rounded-circle img1 ms-sm-n5 mb-2">
+                <img [src]="images[2]" class="rounded-circle ms-1">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col">
-          <button class="btn btn-success"><icon-delivery></icon-delivery> Free delivery</button>
+      <div class="row gap-3 gap-sm-4 mt-5 mb-3">
+        <div class="col-md-5 col-lg d-grid">
+          <div class="card bg-success py-2">
+            <div class="d-flex gap-3 justify-content-center align-items-center text-nowrap">
+              <icon-delivery></icon-delivery> Free delivery
+            </div>
+          </div>
         </div>
-        <div class="col">
-          <button class="btn btn-success"><icon-fire></icon-fire> Free delivery</button>
+        <div class="col-md-5 col-lg d-grid">
+          <div class="card bg-success py-2">
+            <div class="d-flex gap-3 justify-content-center align-items-center text-nowrap">
+              <icon-fire></icon-fire> 100% Local products
+            </div>
+          </div>
         </div>
-        <div class="col">
-          <button class="btn btn-success"><icon-thumbs-up></icon-thumbs-up> Free delivery</button>
+        <div class="col-md-5 col-lg d-grid">
+          <div class="card bg-success py-2">
+            <div class="d-flex gap-3 justify-content-center align-items-center text-nowrap">
+              <icon-thumbs-up></icon-thumbs-up> Always fresh & healthy
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content py-4">
+    <div class="mx-4 mx-sm-5">
+      <div class="row bg-white d-flex align-items-center py-4 px-3 mx-1">
+        <div class="col d-grid d-md-flex gap-3 gap-sm-4 gap-md-5 bar">
+          <a href="#" class="text-decoration-none black-1 active text-nowrap">New arrivals</a>
+          <a href="#" class="text-decoration-none black-1 text-nowrap">Hot selling</a>
+          <a href="#" class="text-decoration-none black-1">Promo</a>
+          <a href="#" class="text-decoration-none black-1 text-nowrap">All fruits</a>
+          <a href="#" class="text-decoration-none black-1">Vegetables</a>
+          <a href="#" class="text-decoration-none black-1">Meats</a>
+        </div>
+        <div class="col-12 col-lg-3 d-flex justify-content-start justify-content-lg-end mt-4 mt-lg-0">
+          <select name="category" id="category" class="p-2">
+            <option value="popular">Popular</option>
+            <option value="new">New</option>
+            <option value="favorites">Favorites</option>
+          </select>
         </div>
       </div>
 
+      <div class="row mt-1 g-5">
+        <div class="col-12 col-sm-6 col-lg-4" *ngFor="let card of cards">
+          <div class="card list-card">
+            <img [src]="card.image" class="card-img-top">
+            <div class="card-body">
+              <h5 class="rubik-font fw-bold m-0">{{ card.title }}</h5>
+              <p class="mb-1">{{ card.sub }}</p>
+              <div class="d-flex align-items-center mb-1">
+                <icon-star class="me-1 text-yellow"></icon-star>
+                <icon-star class="me-1 text-yellow"></icon-star>
+                <icon-star class="me-1 text-yellow"></icon-star>
+                <icon-star class="me-1 text-yellow"></icon-star>
+                <icon-star class="me-2 text-gray"></icon-star>
+                <span> ({{ card.user }})</span>
+              </div>
+              <div class="d-flex align-items-center gap-2 mb-2 price">
+                <h5 class="mt-2">{{ card.price }}</h5>
+                <span class="mt-2"> {{ card.per }}</span>
+              </div>
+              <div class="d-grid">
+                <button class="btn btn-success py-3">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="d-flex justify-content-end">
+          <ul class="pagination d-flex align-items-center gap-1 ps-3">
+            <li class="page-item"><a class="page-link active" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a href=""><button class="btn m-2">Next</button></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="testimonial py-4">
+    <div class="mx-4 mx-sm-5">
+      <h3 class="rubik-font fw-bold mb-3" id="testimonial">Testimonial</h3>
+      <p class="p-text sub-testimonial">See what other shopper say about us</p>
+
+      <div class="row g-5 mx">
+        <div class="col-12 col-sm-6 col-lg-4" *ngFor="let testimonial of testimonials">
+          <div class="card testimonial-card px-4 px-xxl-5 py-5" [class]="testimonial.bg">
+            <h3 class="rubik-font fw-bold mb-5 mt-5">{{ testimonial.title }}</h3>
+            <p class="p-text mb-5">{{ testimonial.desc }}</p>
+            <div class="row mb-5">
+              <div class="col-3 col-sm-12 col-md-3 col-lg-12 col-xl-4">
+                <img [src]="testimonial.img">
+              </div>
+              <div class="col ps-4 ps-xl-0 d-flex align-items-center">
+                <div>
+                  <label class="row name">{{ testimonial.name }}</label>
+                  <small class="row location">{{ testimonial.location }}</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="newsletter">
+    <div>
+      ss
     </div>
   </div>
 

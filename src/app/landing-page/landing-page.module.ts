@@ -6,6 +6,7 @@ import { LandingPageComponent } from './landing-page.component';
 import { IconDeliveryComponent } from '../icons/icon-delivery.component';
 import { IconFireComponent } from '../icons/icon-fire.component';
 import { IconThumbsUpComponent } from '../icons/icon-thumbs-up.component';
+import { IconStarComponent } from '../icons/icon-star.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { IconThumbsUpComponent } from '../icons/icon-thumbs-up.component';
     LandingPageComponent,
     IconDeliveryComponent,
     IconFireComponent,
-    IconThumbsUpComponent
+    IconThumbsUpComponent,
+    IconStarComponent
   ],
   imports: [
     CommonModule,
