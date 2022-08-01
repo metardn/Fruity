@@ -91,6 +91,14 @@ export class LandingPageComponent implements OnInit {
     },
 
   ]
+
+  newsletter_img = "assets/newsletter.png"
+
+  fb_img = "assets/footer/fb.png"
+  tw_img = "assets/footer/tw.png"
+  yt_img = "assets/footer/yt.png"
+  google_play_img = "assets/footer/gplay.png"
+  app_store_img = "assets/footer/appstore.png"
   
   constructor() { }
 

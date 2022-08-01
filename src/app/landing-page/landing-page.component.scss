@@ -26,9 +26,7 @@
 
   .img1 { max-width: 270px; max-height: 240px;}
   
-  .card {
-    font-size: 20px;
-  }
+  .card { font-size: 20px; }
 }
 
 .card { color: white; }
@@ -63,9 +61,7 @@ select {
 
 .pagination {
   background: white;
-  a {
-    color: #615D5D;
-  }
+  a { color: #615D5D; }
 
   button {
     background: #EEEEEE;
@@ -99,3 +95,77 @@ h3 {font-size: 36px; }
 .green { background: #2ABF7D; }
 .purple { background: #A859C3; }
 .blue { background: #4A7AD3;}
+
+.newsletter {
+  filter: drop-shadow(0.750835px 3.9289px 80px rgba(0, 0, 0, 0.07)) 
+    drop-shadow(0.289211px 1.51335px 25.4815px rgba(0, 0, 0, 0.0425185)) 
+    drop-shadow(0.0611792px 0.320132px 6.51852px rgba(0, 0, 0, 0.0274815));
+  h3 { color: #2C2929; }
+  p { 
+    color: #656565; 
+    font-size: 20px;
+  }
+
+  form {
+    input {
+      border-radius: 0;
+      border: none;
+      outline: none;
+      background: #e7e7e7cf;
+      width: 70%;
+      height: 61px; 
+    }
+
+    button {
+      border-radius: 0;
+      width: 30%;
+      font-size: 20px;
+      height: 61px;
+    }
+  }
+}
+.newsletter_img { max-width: 100%; }
+
+.newsletter-form input::placeholder {
+  color: #00000059;
+}
+
+@media (max-width: 576px) {
+  .newsletter {
+    form {
+      input { width: 100%; }
+
+      button { width: 60%; }
+    }
+  }
+}
+
+.footer {
+  background: #20964F;
+  color: white;
+
+  ul li a {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .logo_img {height: 32px;}
+
+  .title-logo {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .title {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .download { font-size: 16px; }
+
+  .download_img {
+    width: 200px;
+  }
+}
+
